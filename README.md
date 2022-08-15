@@ -1,8 +1,6 @@
-# 🚀 Learning and using React hooks
+## 🚀 Learning and using React hooks
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Getting to know useRef hook
+### Getting to know useRef hook
 
 When to Use Refs
 
