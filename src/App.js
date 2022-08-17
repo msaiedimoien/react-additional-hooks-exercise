@@ -1,7 +1,7 @@
 import './App.css';
-import UseRefExample from "./hooks/UseRefExample";
-import UseMemoExample from "./hooks/useMemoExample";
 import Accordion from "./components/Accordion";
+import {UseRefExample, UseMemoExample, UseCallbackExample} from "./hooks";
+
 const App = () => {
   return (
     <div className="container">
@@ -20,6 +20,10 @@ const App = () => {
         </Accordion>
         <hr className="text-success"/>
 
+        <Accordion title='3. useCallback hook' heading='useCallbackHeading'>
+            <UseCallbackExample />
+        </Accordion>
+        <hr className="text-dark"/>
     </div>
   );
 };

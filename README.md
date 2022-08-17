@@ -1,6 +1,6 @@
 ## 🚀 Learning and using React hooks
 
-### Getting to know useRef hook
+### 1. useRef hook
 
 When to Use Refs
 
@@ -14,7 +14,9 @@ NOTE:\
 when you change the value of the useRef.current,
 it is not re-rendered
 
-### Getting to know useMemo hook
+### 2. useMemo hook
+
+Returns a memoized `value`
 
 `useMemo` will only recompute the memoized value when one of the dependencies has changed.\
 This optimization helps to avoid expensive calculations on every render.
@@ -22,3 +24,13 @@ This optimization helps to avoid expensive calculations on every render.
 NOTE:\
 Don’t do anything there that you wouldn’t normally do while rendering.\
 For example, side effects belong in `useEffect`, not `useMemo`.
+
+### 2. useCallback hook
+
+Returns a memoized `callback`
+
+`useCallback(fn, deps)` is equivalent to `useMemo(() => fn, deps)`.
+
+NOTE:\
+`useCallback()` returns memoized callback.\
+`useMemo()` only returns memoized value.
