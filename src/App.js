@@ -1,6 +1,11 @@
 import './App.css';
 import Accordion from "./components/Accordion";
-import {UseRefExample, UseMemoExample, UseCallbackExample} from "./hooks";
+import {
+    UseRefExample,
+    UseMemoExample,
+    UseCallbackExample,
+    UseReducerExample,
+    UseLayoutEffectExample} from "./hooks";
 
 const App = () => {
   return (
@@ -24,6 +29,16 @@ const App = () => {
             <UseCallbackExample />
         </Accordion>
         <hr className="text-dark"/>
+
+        <Accordion title='4. useReducer hook' heading='useReducerHeading'>
+            <UseReducerExample />
+        </Accordion>
+        <hr className="text-info"/>
+
+        <Accordion title='4. UseLayoutEffect hook' heading='useLayoutEffectHeading'>
+            <UseLayoutEffectExample />
+        </Accordion>
+        <hr className="text-primary"/>
     </div>
   );
 };
