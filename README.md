@@ -69,5 +69,5 @@ Returns a stateful value for the pending state of the transition, and a function
 `startTransition` lets you mark updates in the provided callback as transitions.\
 `isPending` indicates when a transition is active to show a pending state.
 
-### 9. Custom hook
+### 9. create Custom hooks
 Create `useFetch` and `useUpdateLogger` hooks and import at `CustomHooks.jsx`.

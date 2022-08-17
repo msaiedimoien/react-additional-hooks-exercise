@@ -55,10 +55,10 @@ const App = () => {
         </Accordion>
         <hr className="text-info"/>
 
-        <Accordion title='9. Custom hook' heading='CustomHooksHeading'>
+        <Accordion title='9. create Custom hook' heading='CustomHooksHeading'>
             <CustomHooks />
         </Accordion>
-        <hr className="text-info"/>
+        <hr className="text-primary"/>
     </div>
   );
 };
