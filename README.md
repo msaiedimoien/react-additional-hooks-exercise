@@ -71,3 +71,19 @@ Returns a stateful value for the pending state of the transition, and a function
 
 ### 9. create Custom hooks
 Create `useFetch` and `useUpdateLogger` hooks and import at `CustomHooks.jsx`.
+
+### 10. useDebugValue hook
+`useDebugValue` can be used to display a label for custom hooks in React DevTools.
+
+
+### 11. useId hook
+`useId` is a hook for generating unique IDs that are stable across the server and client, while avoiding hydration mismatches.
+
+### 12. Rules of Hooks
+`Don’t call Hooks inside loops, conditions, or nested functions.` Instead, always use Hooks at the top level of your React function, before any early returns.
+
+`Only Call Hooks from React Functions`\
+Don’t call Hooks from regular JavaScript functions. Instead, you can:
+
+✅ Call Hooks from React function components.\
+✅ Call Hooks from custom Hooks (we’ll learn about them on the next page).
